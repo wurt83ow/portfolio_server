@@ -4,7 +4,9 @@
     "nclass": "aboutme",
     "title": "Обо мне",
     "content": {
-      "textBefore": "Привет! Меня зовут Андрей, и я - разработчик на Golang. Я начинал свою карьеру как разработчик 1С, и этот опыт дал мне глубокое понимание бизнес-процессов и потребностей пользователей.\n\nС тех пор я успешно перешел на Golang и с нетерпением исследую новые возможности, которые этот язык предлагает. Хотя создание высокопроизводительных веб-приложений и микросервисов - это новая область для меня, я уверен, что мой предыдущий опыт и навыки помогут мне в этом.\n\nНа моем сайте вы найдете информацию обо мне, моем опыте работы, навыках и проектах, над которыми я работал. Если у вас есть вопросы или предложения, не стесняйтесь связаться со мной!\n\nСпасибо за посещение моего сайта. Надеюсь, вам понравится!"
+      "textBefore": "Привет! Меня зовут Андрей, и я - разработчик на Golang...",
+      "iclass": "",
+      "items": []
     },
     "isActive": false
   },
@@ -14,11 +16,32 @@
     "title": "Опыт",
     "content": {
       "textBefore": "I work in such technologies as",
-      "cards": [
-        { "src": "golang", "alt": "Golang", "rating": 1 },
-        { "src": "postgresql", "alt": "PostgreSQL", "rating": 2 },
-        { "src": "docker", "alt": "Docker", "rating": 3 },
-        { "src": "git", "alt": "Git", "rating": 4 }
+      "iclass": "cards",
+      "items": [
+        {
+          "id": 1,
+          "src": "/icons/technology/golang.png",
+          "alt": "Golang",
+          "rating": 1
+        },
+        {
+          "id": 2,
+          "src": "/icons/technology/postgresql.png",
+          "alt": "PostgreSQL",
+          "rating": 2
+        },
+        {
+          "id": 3,
+          "src": "/icons/technology/docker.png",
+          "alt": "Docker",
+          "rating": 3
+        },
+        {
+          "id": 4,
+          "src": "/icons/technology/git.png",
+          "alt": "Git",
+          "rating": 4
+        }
       ],
       "isActive": true
     }
@@ -29,21 +52,25 @@
     "title": "Портфолио",
     "content": {
       "textBefore": "",
-      "bigCards": [
+      "iclass": "bigCards",
+      "items": [
         {
-          "src": "levis",
+          "id": 1,
+          "src": "/media/levis.png",
           "alt": "levis",
           "href": "#",
           "hrefText": "Online fashion store - Homepage"
         },
         {
-          "src": "reebok",
+          "id": 2,
+          "src": "/media/reebok.png",
           "alt": "reebok",
           "href": "#",
           "hrefText": "Reebok Store - Concept"
         },
         {
-          "src": "braun",
+          "id": 3,
+          "src": "/media/braun.png",
           "alt": "braun",
           "href": "#",
           "hrefText": "Braun Landing Page - Concept"
@@ -59,10 +86,26 @@
     "content": {
       "textBefore": "Want to know more or just chat?\nYou are welcome!",
       "btnText": "Send message",
-      "socialIcons": [
-        { "src": "linkedIn", "alt": "linkedIn", "href": "#" },
-        { "src": "instagram", "alt": "instagram", "href": "#" },
-        { "src": "telegram", "alt": "telegram", "href": "#" }
+      "iclass": "socialIcons",
+      "items": [
+        {
+          "id": 1,
+          "src": "/icons/contacts/linkedIn.png",
+          "alt": "linkedIn",
+          "href": "#"
+        },
+        {
+          "id": 2,
+          "src": "/icons/contacts/instagram.png",
+          "alt": "instagram",
+          "href": "#"
+        },
+        {
+          "id": 3,
+          "src": "/icons/contacts/telegram.png",
+          "alt": "telegram",
+          "href": "#"
+        }
       ],
       "textAfter": "Like me on\nLinkedIn, Instagram, Behance, Dribble",
       "isActive": true

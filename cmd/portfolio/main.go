@@ -15,15 +15,29 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
+type Item struct {
+	ID      int    `json:"id" bson:"id"`
+	Src      string  `json:"src" bson:"src"`
+	Alt      string  `json:"alt" bson:"alt"`
+	Href     *string `json:"href,omitempty" bson:"href,omitempty"`
+	HrefText *string `json:"hrefText,omitempty" bson:"hrefText,omitempty"`
+	Rating   *int    `json:"rating,omitempty" bson:"rating,omitempty"`
+}
+
 type Section struct {
 	ID      int    `json:"id" bson:"id"`
 	NClass  string `json:"nclass" bson:"nclass"`
 	Title   string `json:"title" bson:"title"`
 	Content struct {
-		TextBefore string `json:"textBefore" bson:"textBefore"`
+		TextBefore string  `json:"textBefore" bson:"textBefore"`
+		IClass  string `json:"iclass" bson:"iclass"`
+		Items      *[]Item `json:"items,omitempty" bson:"items,omitempty"`		 
+		TextAfter  *string `json:"textAfter,omitempty" bson:"textAfter,omitempty"`
+		IsActive   *bool   `json:"isActive,omitempty" bson:"isActive,omitempty"`
 	} `json:"content" bson:"content"`
-	IsActive bool `json:"isActive" bson:"isActive"`
+	IsActive bool `json:"isActive,omitempty" bson:"isActive,omitempty"`
 }
+
 
 func main() {
 	// Установите контекст для подключения к MongoDB
@@ -87,7 +101,7 @@ func main() {
 	})
 
 	// Добавьте поддержку CORS
-	corsOrigins := handlers.AllowedOrigins([]string{"http://localhost:3000"})
+	corsOrigins := handlers.AllowedOrigins([]string{"http://localhost:8080", "http://localhost:3000"})
 	handler := http.DefaultServeMux // ваш обработчик запросов
 	corsHandler := handlers.CORS(corsOrigins)(handler)
 
