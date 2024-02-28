@@ -3,7 +3,6 @@ package main
 import (
 	"context"
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -16,7 +15,7 @@ import (
 )
 
 type Item struct {
-	ID      int    `json:"id" bson:"id"`
+	ID       int     `json:"id" bson:"id"`
 	Src      string  `json:"src" bson:"src"`
 	Alt      string  `json:"alt" bson:"alt"`
 	Href     *string `json:"href,omitempty" bson:"href,omitempty"`
@@ -30,18 +29,17 @@ type Section struct {
 	Title   string `json:"title" bson:"title"`
 	Content struct {
 		TextBefore string  `json:"textBefore" bson:"textBefore"`
-		IClass  string `json:"iclass" bson:"iclass"`
-		Items      *[]Item `json:"items,omitempty" bson:"items,omitempty"`		 
+		IClass     string  `json:"iclass" bson:"iclass"`
+		Items      *[]Item `json:"items,omitempty" bson:"items,omitempty"`
 		TextAfter  *string `json:"textAfter,omitempty" bson:"textAfter,omitempty"`
 		IsActive   *bool   `json:"isActive,omitempty" bson:"isActive,omitempty"`
 	} `json:"content" bson:"content"`
 	IsActive bool `json:"isActive,omitempty" bson:"isActive,omitempty"`
 }
 
-
 func main() {
 	// Установите контекст для подключения к MongoDB
-	ctx, cancel := context.WithTimeout(context.Background(), 160*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
 
 	// Подключитесь к MongoDB
@@ -53,7 +51,7 @@ func main() {
 
 	// Получите коллекцию
 	collection := client.Database("test").Collection("sections")
-	
+
 	// Загрузите данные из файла sectionsData.json
 	data, err := os.ReadFile("../../sectionsData.json")
 	if err != nil {
@@ -83,25 +81,35 @@ func main() {
 	}
 
 	http.HandleFunc("/api/sections", func(w http.ResponseWriter, r *http.Request) {
+		// Создайте новый контекст для этого HTTP-запроса
+		reqCtx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
+		defer cancel()
+
 		// Извлеките все документы из коллекции
-		cursor, err := collection.Find(ctx, bson.M{})
+		cursor, err := collection.Find(reqCtx, bson.M{})
 		if err != nil {
 			log.Println("Ошибка извлечения данных из базы данных:", err)
 			return
 		}
 
 		var sections []Section
-		if err = cursor.All(ctx, &sections); err != nil {
+		if err = cursor.All(reqCtx, &sections); err != nil {
 			log.Println("Ошибка чтения данных из базы данных:", err)
 			return
 		}
-		fmt.Println("777777777777777777777777", sections)
+
 		// Отправьте данные обратно клиенту
-		json.NewEncoder(w).Encode(sections)
+		err = json.NewEncoder(w).Encode(sections)
+		if err != nil {
+			log.Printf("Ошибка при кодировании данных в JSON: %v", err)
+			http.Error(w, "Внутренняя ошибка сервера", http.StatusInternalServerError)
+			return
+		}
+
 	})
 
 	// Добавьте поддержку CORS
-	corsOrigins := handlers.AllowedOrigins([]string{"http://localhost:8080", "http://localhost:3000"})
+	corsOrigins := handlers.AllowedOrigins([]string{"http://localhost:8080", "http://localhost:3000", "http://127.0.0.1:8080"})
 	handler := http.DefaultServeMux // ваш обработчик запросов
 	corsHandler := handlers.CORS(corsOrigins)(handler)
 
