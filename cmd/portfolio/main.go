@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -81,6 +82,9 @@ func main() {
 	}
 
 	http.HandleFunc("/api/sections", func(w http.ResponseWriter, r *http.Request) {
+
+		fmt.Printf("Request received from %s\n", r.RemoteAddr)
+
 		// Создайте новый контекст для этого HTTP-запроса
 		reqCtx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 		defer cancel()
@@ -109,7 +113,7 @@ func main() {
 	})
 
 	// Добавьте поддержку CORS
-	corsOrigins := handlers.AllowedOrigins([]string{"http://localhost:8080", "http://localhost:3000", "http://127.0.0.1:8080"})
+	corsOrigins := handlers.AllowedOrigins([]string{"http://localhost:8080", "http://localhost:3000", "http://backend:8082", "http://127.0.0.1:8082", "http://localhost:8082"})
 	handler := http.DefaultServeMux // ваш обработчик запросов
 	corsHandler := handlers.CORS(corsOrigins)(handler)
 

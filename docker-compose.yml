@@ -30,6 +30,8 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+    volumes:
+      - portfolio_client_dist_volume:/usr/share/nginx/html # Том для чтения собранных файлов 
     ports:
       - "80:80"
     networks:
