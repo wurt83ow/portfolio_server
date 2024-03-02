@@ -43,7 +43,7 @@ func main() {
 	defer cancel()
 
 	// Подключитесь к MongoDB
-	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://root:example@127.0.0.1:27017"))
+	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://root:example@mongo:27017"))
 	if err != nil {
 		log.Println("Ошибка подключения к MongoDB:", err)
 		return
@@ -53,7 +53,7 @@ func main() {
 	collection := client.Database("test").Collection("sections")
 
 	// Загрузите данные из файла sectionsData.json
-	data, err := os.ReadFile("../../sectionsData.json")
+	data, err := os.ReadFile("./sectionsData.json")
 	if err != nil {
 		log.Println("Ошибка чтения файла sectionsData.json:", err)
 		return
@@ -113,5 +113,5 @@ func main() {
 	handler := http.DefaultServeMux // ваш обработчик запросов
 	corsHandler := handlers.CORS(corsOrigins)(handler)
 
-	log.Fatal(http.ListenAndServe(":8090", corsHandler))
+	log.Fatal(http.ListenAndServe(":8080", corsHandler))
 }

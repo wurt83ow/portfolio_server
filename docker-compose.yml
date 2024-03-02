@@ -1,5 +1,4 @@
-version: "3.1"
-
+version: "3.8"
 services:
   mongo:
     image: mongo
@@ -11,3 +10,33 @@ services:
       - ./data/db:/data/db
     ports:
       - 27017:27017
+    networks:
+      - custom_network
+  backend:
+    build:
+      context: ./
+      dockerfile: ./cmd/portfolio/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./cmd/portfolio:/app
+      - ./icons:/app/icons
+      - ./media:/app/media
+    networks:
+      - custom_network
+    depends_on:
+      - mongo
+  nginx:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - custom_network
+    volumes:
+      - ./icons:/app/icons
+      - ./media:/app/media
+networks:
+  custom_network:
+    driver: bridge
