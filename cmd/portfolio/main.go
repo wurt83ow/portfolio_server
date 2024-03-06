@@ -115,7 +115,7 @@ func main() {
 	// Добавьте поддержку CORS
 	corsOrigins := handlers.AllowedOrigins([]string{"http://localhost:8080", "http://localhost:3000",
 		"http://backend:8082", "http://127.0.0.1:8082", "http://localhost:8082", "http://51.250.122.232:8082",
-		"http://51.250.122.232:8080"})
+		"http://51.250.122.232:8080", "http://localhost:80", "http://51.250.122.232:80", "http://localhost"})
 	handler := http.DefaultServeMux // ваш обработчик запросов
 	corsHandler := handlers.CORS(corsOrigins)(handler)
 

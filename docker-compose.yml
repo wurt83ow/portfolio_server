@@ -31,14 +31,15 @@ services:
       context: ./
       dockerfile: Dockerfile
     volumes:
-      - portfolio_client_dist_volume:/usr/share/nginx/html # Том для чтения собранных файлов 
+      - portfolio_client_dist_volume:/usr/share/nginx/html # Том для чтения собранных файлов
+      - ./icons:/app/icons
+      - ./media:/app/media
     ports:
       - "80:80"
     networks:
       - custom_network
-    volumes:
-      - ./icons:/app/icons
-      - ./media:/app/media
 networks:
   custom_network:
     driver: bridge
+volumes:
+  portfolio_client_dist_volume:
