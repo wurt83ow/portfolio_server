@@ -12,6 +12,7 @@ services:
       - 27017:27017
     networks:
       - custom_network
+
   backend:
     build:
       context: ./
@@ -23,23 +24,37 @@ services:
       - ./icons:/app/icons
       - ./media:/app/media
     networks:
-      - custom_network
+      custom_network:
+        aliases:
+          - backend
     depends_on:
       - mongo
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
   nginx:
     build:
       context: ./
       dockerfile: Dockerfile
     volumes:
-      - portfolio_client_dist_volume:/usr/share/nginx/html # Том для чтения собранных файлов
+      - portfolio_client_dist_volume:/usr/share/nginx/html
       - ./icons:/app/icons
       - ./media:/app/media
     ports:
       - "80:80"
     networks:
-      - custom_network
+      custom_network:
+        aliases:
+          - nginx
+    depends_on:
+      - backend
+
 networks:
   custom_network:
     driver: bridge
+
 volumes:
   portfolio_client_dist_volume:

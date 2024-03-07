@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nclass": "aboutme",
-    "title": "Обо мне",
+    "title": "Обо мне 888",
     "content": {
       "textBefore": "Привет! Меня зовут Андрей, и я - разработчик на Golang...",
       "iclass": "",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "nclass": "skills",
-    "title": "Опыт",
+    "title": "Опыт 888",
     "content": {
       "textBefore": "I work in such technologies as",
       "iclass": "cards",
