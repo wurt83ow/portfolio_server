@@ -56,21 +56,21 @@
       "items": [
         {
           "id": 1,
-          "src": "/media/levis.png",
+          "src": "",
           "alt": "levis",
           "href": "#",
           "hrefText": "Online fashion store - Homepage"
         },
         {
           "id": 2,
-          "src": "/media/reebok.png",
+          "src": "",
           "alt": "reebok",
           "href": "#",
           "hrefText": "Reebok Store - Concept"
         },
         {
           "id": 3,
-          "src": "/media/braun.png",
+          "src": "",
           "alt": "braun",
           "href": "#",
           "hrefText": "Braun Landing Page - Concept"

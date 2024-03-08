@@ -27,9 +27,10 @@ WORKDIR /root/
 COPY --from=builder /app/main .
 
 # Копируйте статические файлы, если они нужны приложению
-COPY --from=builder /app/icons /root/icons
-COPY --from=builder /app/media /root/media
 COPY --from=builder /app/sectionsData.json .
+# COPY --from=builder /app/icons /root/icons
+# COPY --from=builder /app/media /root/media
+
 
 # Укажите порт, на котором будет работать приложение
 EXPOSE 8080

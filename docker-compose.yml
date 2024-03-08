@@ -21,8 +21,8 @@ services:
       - "8080:8080"
     volumes:
       - ./cmd/portfolio:/app
-      - ./icons:/app/icons
-      - ./media:/app/media
+      - ./static/icons:/app/icons
+      - ./static/media:/app/media
     networks:
       custom_network:
         aliases:
@@ -41,8 +41,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - portfolio_client_dist_volume:/usr/share/nginx/html
-      - ./icons:/app/icons
-      - ./media:/app/media
+      - ./static/icons:/app/icons
+      - ./static/media:/app/media
     ports:
       - "80:80"
     networks:
