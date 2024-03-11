@@ -16,27 +16,43 @@ import (
 )
 
 type Item struct {
-	ID     int      `json:"id" bson:"id"`
-	Src    string   `json:"src" bson:"src"`
-	Alt    string   `json:"alt" bson:"alt"`
-	Title  string   `json:"title" bson:"title"`
-	Hrefs  []string `json:"hrefs" bson:"hrefs"`
-	Descr  string   `json:"descr" bson:"descr"`
-	Rating *int     `json:"rating,omitempty" bson:"rating,omitempty"`
+	ID  int    `json:"id" bson:"id"`
+	Src string `json:"src" bson:"src"`
+	Alt struct {
+		Ru string `json:"ru" bson:"ru"`
+		En string `json:"en" bson:"en"`
+	} `json:"alt" bson:"alt"`
+	Title struct {
+		Ru string `json:"ru" bson:"ru"`
+		En string `json:"en" bson:"en"`
+	} `json:"title" bson:"title"`
+	Hrefs []string `json:"hrefs" bson:"hrefs"`
+	Descr struct {
+		Ru string `json:"ru" bson:"ru"`
+		En string `json:"en" bson:"en"`
+	} `json:"descr" bson:"descr"`
+	Rating *int `json:"rating,omitempty" bson:"rating,omitempty"`
 }
 
-
-
 type Section struct {
-	ID      int    `json:"id" bson:"id"`
-	NClass  string `json:"nclass" bson:"nclass"`
-	Title   string `json:"title" bson:"title"`
+	ID     int    `json:"id" bson:"id"`
+	NClass string `json:"nclass" bson:"nclass"`
+	Title  struct {
+		Ru string `json:"ru" bson:"ru"`
+		En string `json:"en" bson:"en"`
+	} `json:"title" bson:"title"`
 	Content struct {
-		TextBefore string  `json:"textBefore" bson:"textBefore"`
-		IClass     string  `json:"iclass" bson:"iclass"`
-		Items      *[]Item `json:"items,omitempty" bson:"items,omitempty"`
-		TextAfter  *string `json:"textAfter,omitempty" bson:"textAfter,omitempty"`
-		IsActive   *bool   `json:"isActive,omitempty" bson:"isActive,omitempty"`
+		TextBefore struct {
+			Ru string `json:"ru" bson:"ru"`
+			En string `json:"en" bson:"en"`
+		} `json:"textBefore" bson:"textBefore"`
+		IClass    string  `json:"iclass" bson:"iclass"`
+		Items     *[]Item `json:"items,omitempty" bson:"items,omitempty"`
+		TextAfter struct {
+			Ru string `json:"ru" bson:"ru"`
+			En string `json:"en" bson:"en"`
+		} `json:"textAfter,omitempty" bson:"textAfter,omitempty"`
+		IsActive *bool `json:"isActive,omitempty" bson:"isActive,omitempty"`
 	} `json:"content" bson:"content"`
 	IsActive bool `json:"isActive,omitempty" bson:"isActive,omitempty"`
 }
