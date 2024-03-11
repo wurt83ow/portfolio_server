@@ -16,13 +16,16 @@ import (
 )
 
 type Item struct {
-	ID       int     `json:"id" bson:"id"`
-	Src      string  `json:"src" bson:"src"`
-	Alt      string  `json:"alt" bson:"alt"`
-	Href     *string `json:"href,omitempty" bson:"href,omitempty"`
-	HrefText *string `json:"hrefText,omitempty" bson:"hrefText,omitempty"`
-	Rating   *int    `json:"rating,omitempty" bson:"rating,omitempty"`
+	ID     int      `json:"id" bson:"id"`
+	Src    string   `json:"src" bson:"src"`
+	Alt    string   `json:"alt" bson:"alt"`
+	Title  string   `json:"title" bson:"title"`
+	Hrefs  []string `json:"hrefs" bson:"hrefs"`
+	Descr  string   `json:"descr" bson:"descr"`
+	Rating *int     `json:"rating,omitempty" bson:"rating,omitempty"`
 }
+
+
 
 type Section struct {
 	ID      int    `json:"id" bson:"id"`
