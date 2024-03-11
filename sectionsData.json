@@ -2,9 +2,15 @@
   {
     "id": 1,
     "nclass": "aboutme",
-    "title": "Обо мне",
+    "title": {
+      "ru": "Обо мне",
+      "en": "About Me"
+    },
     "content": {
-      "textBefore": "Привет, я Андрей - разработчик на Golang из Москвы.\nС юного возраста я увлекался технологиями и программированием, затем последовало 18 лет промышленной разработки. В итоге всё это привело меня к выбору Golang как моего основного инструмента. Я глубоко погружаюсь в изучение Go, стремясь к тому, чтобы мои проекты были не только функциональными, но и эффективными и масштабируемыми. Моя любовь к разработке и стремление к постоянному обучению приводят меня к участию в проектах, где я могу применять свои навыки и расширять их. Я мечтаю работать над проектами, которые имеют значимое влияние на общество или бизнес, и где я могу расти вместе с командой. Я ценю качество кода, чистую архитектуру и хорошее общение в команде. Моя цель - создавать продукты, которые решают реальные проблемы и вносят положительный вклад в окружающий нас мир.",
+      "textBefore": {
+        "ru": "Привет, я Андрей - разработчик на Golang из Москвы.\nС юного возраста я увлекался технологиями и программированием, затем последовало 18 лет промышленной разработки. В итоге всё это привело меня к выбору Golang как моего основного инструмента. Я глубоко погружаюсь в изучение Go, стремясь к тому, чтобы мои проекты были не только функциональными, но и эффективными и масштабируемыми. Моя любовь к разработке и стремление к постоянному обучению приводят меня к участию в проектах, где я могу применять свои навыки и расширять их. Я мечтаю работать над проектами, которые имеют значимое влияние на общество или бизнес, и где я могу расти вместе с командой. Я ценю качество кода, чистую архитектуру и хорошее общение в команде. Моя цель - создавать продукты, которые решают реальные проблемы и вносят положительный вклад в окружающий нас мир.",
+        "en": "Hello, I'm Andrey, a Golang developer from Moscow.\nFrom a young age, I was fascinated by technology and programming, which led me to choose Golang as my main tool. I deeply immerse myself in learning Go, aiming to make my projects not only functional but also efficient and scalable. My passion for development and desire for continuous learning lead me to participate in projects where I can apply my skills and expand them. I dream of working on projects that have a significant impact on society or business, and where I can grow with the team. I value code quality, clean architecture, and good team communication. My goal is to create products that solve real problems and contribute positively to the world around us."
+      },
       "iclass": "",
       "items": []
     },
@@ -13,33 +19,51 @@
   {
     "id": 2,
     "nclass": "skills",
-    "title": "Опыт",
+    "title": {
+      "ru": "Опыт",
+      "en": "Skills"
+    },
     "content": {
-      "textBefore": "I work in such technologies as",
+      "textBefore": {
+        "ru": "Я работаю с такими технологиями как",
+        "en": "I work with such technologies as"
+      },
       "iclass": "cards",
       "items": [
         {
           "id": 1,
           "src": "/icons/technology/golang.png",
-          "alt": "Golang",
+          "alt": {
+            "ru": "Golang",
+            "en": "Golang"
+          },
           "rating": 1
         },
         {
           "id": 2,
           "src": "/icons/technology/postgresql.png",
-          "alt": "PostgreSQL",
+          "alt": {
+            "ru": "PostgreSQL",
+            "en": "PostgreSQL"
+          },
           "rating": 2
         },
         {
           "id": 3,
           "src": "/icons/technology/docker.png",
-          "alt": "Docker",
+          "alt": {
+            "ru": "Docker",
+            "en": "Docker"
+          },
           "rating": 3
         },
         {
           "id": 4,
           "src": "/icons/technology/git.png",
-          "alt": "Git",
+          "alt": {
+            "ru": "Git",
+            "en": "Git"
+          },
           "rating": 4
         }
       ],
@@ -49,15 +73,24 @@
   {
     "id": 3,
     "nclass": "portfolio",
-    "title": "Портфолио",
+    "title": {
+      "ru": "Портфолио",
+      "en": "Portfolio"
+    },
     "content": {
       "textBefore": "",
       "iclass": "projects",
       "items": [
         {
           "id": 1,
-          "title": "Менеджер паролей GophKeeper",
-          "descr": "GophKeeper - это система управления паролями, разработанная на Go, которая обеспечивает безопасное и удобное хранение личной информации.Проект включает в себя клиент-серверную архитектуру, позволяющую пользователям регистрироваться, аутентифицироваться и авторизовывать доступ к своим данным.GophKeeper поддерживает синхронизацию данных между клиентами и обеспечивает безопасность передачи и хранения информации.Клиент GophKeeper представляет собой CLI-приложение, доступное для Windows, Linux и Mac OS, что обеспечивает удобство использования на различных платформах.Проект включает в себя функции для создания, редактирования и удаления данных, а также для выбора хранилища и формата хранения данных.GophKeeper также предлагает гибкость в выборе механизмов аутентификации и авторизации, обеспечивая высокий уровень безопасности.Проект покрыт юнит-тестами, подтверждающими его надежность и стабильность.Этот проект демонстрирует мои навыки в разработке на Go, а также мою способность создавать сложные и функциональные системы, которые решают реальные задачи пользователей.",
+          "title": {
+            "ru": "Менеджер паролей GophKeeper",
+            "en": "Password Manager GophKeeper"
+          },
+          "descr": {
+            "ru": "GophKeeper - это система управления паролями, разработанная на Go, которая обеспечивает безопасное и удобное хранение личной информации. Проект включает в себя клиент-серверную архитектуру, позволяющую пользователям регистрироваться, аутентифицироваться и авторизовывать доступ к своим данным. GophKeeper поддерживает синхронизацию данных между клиентами и обеспечивает безопасность передачи и хранения информации. Клиент GophKeeper представляет собой CLI-приложение, доступное для Windows, Linux и Mac OS, что обеспечивает удобство использования на различных платформах. Проект включает в себя функции для создания, редактирования и удаления данных, а также для выбора хранилища и формата хранения данных. GophKeeper также предлагает гибкость в выборе механизмов аутентификации и авторизации, обеспечивая высокий уровень безопасности. Проект покрыт юнит-тестами, подтверждающими его надежность и стабильность. Этот проект демонстрирует мои навыки в разработке на Go, а также мою способность создавать сложные и функциональные системы, которые решают реальные задачи пользователей.",
+            "en": "GophKeeper is a password management system developed in Go, ensuring secure and convenient storage of personal information. The project includes a client-server architecture, allowing users to register, authenticate, and authorize access to their data. GophKeeper supports data synchronization between clients and ensures the security of data transmission and storage. The GophKeeper client is a CLI application available for Windows, Linux, and Mac OS, ensuring ease of use across different platforms. The project includes functions for creating, editing, and deleting data, as well as for choosing storage and data storage formats. GophKeeper also offers flexibility in choosing authentication and authorization mechanisms, ensuring a high level of security. The project is covered by unit tests, confirming its reliability and stability. This project demonstrates my skills in Go development, as well as my ability to create complex and functional systems that solve real user problems."
+          },
           "hrefs": [
             "https://github.com/wurt83ow/gophkeeper-client",
             "https://github.com/wurt83ow/gophkeeper-server"
@@ -65,20 +98,38 @@
         },
         {
           "id": 2,
-          "title": "Накопительная система лояльности «Гофермарт»",
-          "descr": "\"Гофермарт\" - это накопительная система лояльности, разработанная на Golang, предназначенная для улучшения взаимодействия с клиентами интернет-магазина \"Гофермарт\".Система обеспечивает регистрацию и аутентификацию пользователей, приём и обработку номеров заказов, а также управление накопительным счётом лояльности.С помощью уникальной интеграции с внешней системой расчёта баллов лояльности, \"Гофермарт Лояльность\" позволяет пользователям накапливать и использовать баллы для оплаты покупок, создавая эффективную и удобную систему лояльности.",
+          "title": {
+            "ru": "Накопительная система лояльности «Гофермарт»",
+            "en": "Loyalty Accumulation System \"GopherMart\""
+          },
+          "descr": {
+            "ru": "\"Гофермарт\" - это накопительная система лояльности, разработанная на Golang, предназначенная для улучшения взаимодействия с клиентами интернет-магазина \"Гофермарт\". Система обеспечивает регистрацию и аутентификацию пользователей, приём и обработку номеров заказов, а также управление накопительным счётом лояльности. С помощью уникальной интеграции с внешней системой расчёта баллов лояльности, \"Гофермарт Лояльность\" позволяет пользователям накапливать и использовать баллы для оплаты покупок, создавая эффективную и удобную систему лояльности.",
+            "en": "\"GopherMart\" is a loyalty accumulation system developed in Golang, designed to improve the interaction with the customers of the online store \"GopherMart\". The system ensures user registration and authentication, order number acceptance and processing, as well as loyalty account management. With the help of a unique integration with an external loyalty points calculation system, \"GopherMart Loyalty\" allows users to accumulate and use points for payment, creating an effective and convenient loyalty system."
+          },
           "hrefs": ["https://github.com/wurt83ow/gophermart"]
         },
         {
           "id": 3,
-          "title": "Сервис сокращения URL «Tinyurl»",
-          "descr": "\"Tinyurl\" - это сервис сокращения URL, разработанный на Golang, предназначенный для упрощения и ускорения доступа к веб-ресурсам.Проект демонстрирует применение широкого спектра технологий и пакетов Golang, включая работу с HTTP, чтение аргументов командной строки, логирование, сериализацию и десериализацию данных, сжатие данных, взаимодействие с файловой системой, управление временем выполнения и базами данных SQL.Сервис обеспечивает безопасность информации с помощью хеширования и криптографии, поддерживает многопоточность для обработки большого количества запросов, и использует паттерны проектирования и антипаттерны для обеспечения качества кода.Проект также включает профилирование для оптимизации производительности, стилизацию для улучшения пользовательского опыта и тщательную документацию для облегчения понимания и поддержки кода.",
+          "title": {
+            "ru": "Сервис сокращения URL «Tinyurl»",
+            "en": "URL Shortening Service \"Tinyurl\""
+          },
+          "descr": {
+            "ru": "\"Tinyurl\" - это сервис сокращения URL, разработанный на Golang, предназначенный для упрощения и ускорения доступа к веб-ресурсам. Проект демонстрирует применение широкого спектра технологий и пакетов Golang, включая работу с HTTP, чтение аргументов командной строки, логирование, сериализацию и десериализацию данных, сжатие данных, взаимодействие с файловой системой, управление временем выполнения и базами данных SQL. Сервис обеспечивает безопасность информации с помощью хеширования и криптографии, поддерживает многопоточность для обработки большого количества запросов, и использует паттерны проектирования и антипаттерны для обеспечения качества кода. Проект также включает профилирование для оптимизации производительности, стилизацию для улучшения пользовательского опыта и тщательную документацию для облегчения понимания и поддержки кода.",
+            "en": "\"Tinyurl\" is a URL shortening service developed in Golang, designed to simplify and speed up access to web resources. The project demonstrates the application of a wide range of Golang technologies and packages, including working with HTTP, reading command-line arguments, logging, serialization and deserialization of data, data compression, interaction with the file system, runtime management, and SQL databases. The service ensures information security through hashing and cryptography, supports multi-threading for processing a large number of requests, and uses design patterns and anti-patterns to ensure code quality. The project also includes profiling for performance optimization, styling to improve the user experience, and thorough documentation to facilitate understanding and support of the code."
+          },
           "hrefs": ["https://github.com/wurt83ow/tinyurl"]
         },
         {
           "id": 4,
-          "title": "Portfolio - текущая страница",
-          "descr": "\"Portfolio\" - это веб-проект, сочетающий в себе клиентскую часть, разработанную на React, и бэкенд, реализованный на Golang. Проект использует MongoDB в качестве базы данных для хранения и обработки данных, а веб-сервер Nginx обеспечивает высокую производительность и надежность. Для развертывания и управления проектом используется Docker, позволяя запускать приложение в трех контейнерах: portfolio_server_nginx для обработки входящих HTTP-запросов, mongo для работы с базой данных, и portfolio_server_backend для обработки бизнес-логики на стороне сервера. Развертывание проекта осуществляется на виртуальной машине в Яндекс.Облаке, что обеспечивает масштабируемость и надежность инфраструктуры. ",
+          "title": {
+            "ru": "Portfolio - текущая страница",
+            "en": "Portfolio - Current Page"
+          },
+          "descr": {
+            "ru": "\"Portfolio\" - это веб-проект, сочетающий в себе клиентскую часть, разработанную на React, и бэкенд, реализованный на Golang. Проект использует MongoDB в качестве базы данных для хранения и обработки данных, а веб-сервер Nginx обеспечивает высокую производительность и надежность. Для развертывания и управления проектом используется Docker, позволяя запускать приложение в трех контейнерах: portfolio_server_nginx для обработки входящих HTTP-запросов, mongo для работы с базой данных, и portfolio_server_backend для обработки бизнес-логики на стороне сервера. Развертывание проекта осуществляется на виртуальной машине в Яндекс.Облаке, что обеспечивает масштабируемость и надежность инфраструктуры.",
+            "en": "\"Portfolio\" is a web project that combines a client-side part developed in React and a backend implemented in Golang. The project uses MongoDB as a database for storing and processing data, and the Nginx web server ensures high performance and reliability. Docker is used for deployment and project management, allowing the application to run in three containers: portfolio_server_nginx for handling incoming HTTP requests, mongo for database operations, and portfolio_server_backend for server-side business logic processing. The project is deployed on a virtual machine in Yandex.Cloud, ensuring scalability and reliability of the infrastructure."
+          },
           "hrefs": [
             "https://github.com/wurt83ow/portfolio_server",
             "https://github.com/wurt83ow/portfolio_client"
@@ -90,32 +141,53 @@
   {
     "id": 4,
     "nclass": "contacts",
-    "title": "Contacts",
+    "title": {
+      "ru": "Контакты",
+      "en": "Contacts"
+    },
     "content": {
-      "textBefore": "Want to know more or just chat?\nYou are welcome!",
-      "btnText": "Send message",
+      "textBefore": {
+        "ru": "Хотите узнать больше или просто поговорить?\nВы всегда пожалуйста!",
+        "en": "Want to know more or just chat?\nYou are welcome!"
+      },
+      "btnText": {
+        "ru": "Отправить сообщение",
+        "en": "Send message"
+      },
       "iclass": "socialIcons",
       "items": [
         {
           "id": 1,
           "src": "/icons/contacts/linkedIn.png",
-          "alt": "linkedIn",
+          "alt": {
+            "ru": "linkedIn",
+            "en": "linkedIn"
+          },
           "hrefs": ["https://github.com/"]
         },
         {
           "id": 2,
           "src": "/icons/contacts/github.png",
-          "alt": "github",
+          "alt": {
+            "ru": "github",
+            "en": "github"
+          },
           "hrefs": ["https://github.com/"]
         },
         {
           "id": 3,
           "src": "/icons/contacts/telegram.png",
-          "alt": "telegram",
+          "alt": {
+            "ru": "telegram",
+            "en": "telegram"
+          },
           "hrefs": ["https://t.me/drstein77"]
         }
       ],
-      "textAfter": "Like me on\nLinkedIn, github, telegram",
+      "textAfter": {
+        "ru": "Подпишитесь на меня в\nLinkedIn, GitHub, Telegram",
+        "en": "Subscribe to me on\nLinkedIn, GitHub, Telegram"
+      },
       "isActive": true
     }
   }
