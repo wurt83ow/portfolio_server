@@ -78,7 +78,10 @@
       "en": "Portfolio"
     },
     "content": {
-      "textBefore": "",
+      "textBefore": {
+        "ru": "",
+        "en": ""
+      },
       "iclass": "projects",
       "items": [
         {
