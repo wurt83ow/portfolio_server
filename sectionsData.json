@@ -37,6 +37,7 @@
             "ru": "Golang",
             "en": "Golang"
           },
+          "hrefs": ["https://go.dev/"],
           "rating": 1
         },
         {
@@ -46,6 +47,7 @@
             "ru": "PostgreSQL",
             "en": "PostgreSQL"
           },
+          "hrefs": ["https://www.postgresql.org/"],
           "rating": 2
         },
         {
@@ -55,6 +57,7 @@
             "ru": "Docker",
             "en": "Docker"
           },
+          "hrefs": ["https://www.docker.com/"],
           "rating": 3
         },
         {
@@ -64,6 +67,7 @@
             "ru": "Git",
             "en": "Git"
           },
+          "hrefs": ["https://github.com/"],
           "rating": 4
         }
       ],
@@ -88,11 +92,11 @@
           "id": 1,
           "title": {
             "ru": "Менеджер паролей GophKeeper",
-            "en": "Password Manager GophKeeper"
+            "en": "Password Manager \"GophKeeper\""
           },
           "descr": {
-            "ru": "GophKeeper - это система управления паролями, разработанная на Go, которая обеспечивает безопасное и удобное хранение личной информации. Проект включает в себя клиент-серверную архитектуру, позволяющую пользователям регистрироваться, аутентифицироваться и авторизовывать доступ к своим данным. GophKeeper поддерживает синхронизацию данных между клиентами и обеспечивает безопасность передачи и хранения информации. Клиент GophKeeper представляет собой CLI-приложение, доступное для Windows, Linux и Mac OS, что обеспечивает удобство использования на различных платформах. Проект включает в себя функции для создания, редактирования и удаления данных, а также для выбора хранилища и формата хранения данных. GophKeeper также предлагает гибкость в выборе механизмов аутентификации и авторизации, обеспечивая высокий уровень безопасности. Проект покрыт юнит-тестами, подтверждающими его надежность и стабильность. Этот проект демонстрирует мои навыки в разработке на Go, а также мою способность создавать сложные и функциональные системы, которые решают реальные задачи пользователей.",
-            "en": "GophKeeper is a password management system developed in Go, ensuring secure and convenient storage of personal information. The project includes a client-server architecture, allowing users to register, authenticate, and authorize access to their data. GophKeeper supports data synchronization between clients and ensures the security of data transmission and storage. The GophKeeper client is a CLI application available for Windows, Linux, and Mac OS, ensuring ease of use across different platforms. The project includes functions for creating, editing, and deleting data, as well as for choosing storage and data storage formats. GophKeeper also offers flexibility in choosing authentication and authorization mechanisms, ensuring a high level of security. The project is covered by unit tests, confirming its reliability and stability. This project demonstrates my skills in Go development, as well as my ability to create complex and functional systems that solve real user problems."
+            "ru": "\"GophKeeper\" - это система управления паролями, разработанная на Go, которая обеспечивает безопасное и удобное хранение личной информации. Проект включает в себя клиент-серверную архитектуру, позволяющую пользователям регистрироваться, аутентифицироваться и авторизовывать доступ к своим данным. GophKeeper поддерживает синхронизацию данных между клиентами и обеспечивает безопасность передачи и хранения информации. Клиент GophKeeper представляет собой CLI-приложение, доступное для Windows, Linux и Mac OS, что обеспечивает удобство использования на различных платформах. Проект включает в себя функции для создания, редактирования и удаления данных, а также для выбора хранилища и формата хранения данных. GophKeeper также предлагает гибкость в выборе механизмов аутентификации и авторизации, обеспечивая высокий уровень безопасности. Проект покрыт юнит-тестами, подтверждающими его надежность и стабильность. Этот проект демонстрирует мои навыки в разработке на Go, а также мою способность создавать сложные и функциональные системы, которые решают реальные задачи пользователей.",
+            "en": "\"GophKeeper\" is a password management system developed in Go, ensuring secure and convenient storage of personal information. The project includes a client-server architecture, allowing users to register, authenticate, and authorize access to their data. GophKeeper supports data synchronization between clients and ensures the security of data transmission and storage. The GophKeeper client is a CLI application available for Windows, Linux, and Mac OS, ensuring ease of use across different platforms. The project includes functions for creating, editing, and deleting data, as well as for choosing storage and data storage formats. GophKeeper also offers flexibility in choosing authentication and authorization mechanisms, ensuring a high level of security. The project is covered by unit tests, confirming its reliability and stability. This project demonstrates my skills in Go development, as well as my ability to create complex and functional systems that solve real user problems."
           },
           "hrefs": [
             "https://github.com/wurt83ow/gophkeeper-client",
@@ -114,7 +118,7 @@
         {
           "id": 3,
           "title": {
-            "ru": "Сервис сокращения URL \"Tinyurl\"",
+            "ru": "Сервис сокращения URL Tinyurl",
             "en": "URL Shortening Service \"Tinyurl\""
           },
           "descr": {
@@ -126,8 +130,8 @@
         {
           "id": 4,
           "title": {
-            "ru": "\"Portfolio\" - текущая страница",
-            "en": "\"Portfolio\" - Current Page"
+            "ru": "Вебсайт Portfolio",
+            "en": "Website \"Portfolio\""
           },
           "descr": {
             "ru": "\"Portfolio\" - это веб-проект, сочетающий в себе клиентскую часть, разработанную на React, и бэкенд, реализованный на Golang. Проект использует MongoDB в качестве базы данных для хранения и обработки данных, а веб-сервер Nginx обеспечивает высокую производительность и надежность. Для развертывания и управления проектом используется Docker, позволяя запускать приложение в трех контейнерах: portfolio_server_nginx для обработки входящих HTTP-запросов, mongo для работы с базой данных, и portfolio_server_backend для обработки бизнес-логики на стороне сервера. Развертывание проекта осуществляется на виртуальной машине в Яндекс.Облаке, что обеспечивает масштабируемость и надежность инфраструктуры.",
@@ -175,7 +179,7 @@
             "ru": "github",
             "en": "github"
           },
-          "hrefs": ["https://github.com/"]
+          "hrefs": ["https://github.com/wurt83ow"]
         },
         {
           "id": 3,
