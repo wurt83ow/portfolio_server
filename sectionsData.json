@@ -8,8 +8,8 @@
     },
     "content": {
       "textBefore": {
-        "ru": "Привет, я Андрей - разработчик на Golang из Москвы.\nС юного возраста я увлекался технологиями и программированием, затем последовало 18 лет промышленной разработки. В итоге всё это привело меня к выбору Golang как моего основного инструмента. Я глубоко погружаюсь в изучение Go, стремясь к тому, чтобы мои проекты были не только функциональными, но и эффективными и масштабируемыми. Моя любовь к разработке и стремление к постоянному обучению приводят меня к участию в проектах, где я могу применять свои навыки и расширять их. Я мечтаю работать над проектами, которые имеют значимое влияние на общество или бизнес, и где я могу расти вместе с командой. Я ценю качество кода, чистую архитектуру и хорошее общение в команде. Моя цель - создавать продукты, которые решают реальные проблемы и вносят положительный вклад в окружающий нас мир.",
-        "en": "Hello, I'm Andrey, a Golang developer from Moscow.\nFrom a young age, I was fascinated by technology and programming, which led me to choose Golang as my main tool. I deeply immerse myself in learning Go, aiming to make my projects not only functional but also efficient and scalable. My passion for development and desire for continuous learning lead me to participate in projects where I can apply my skills and expand them. I dream of working on projects that have a significant impact on society or business, and where I can grow with the team. I value code quality, clean architecture, and good team communication. My goal is to create products that solve real problems and contribute positively to the world around us."
+        "ru": "Привет, я Андрей — опытный разработчик.\nС недавнего времени, специализируюсь на создании производительных и надёжных веб-приложений на golang. С юного возраста я увлекался технологиями и программированием, затем последовало 18 лет промышленной разработки решений для автоматизации бизнес-процессов. С моим опытом в разработке и использовании современных технологий, я стремлюсь к созданию решений, которые улучшают пользовательский опыт и повышают эффективность бизнес-процессов. Моя страсть к программированию и стремление к постоянному обучению позволяют мне оставаться в курсе последних тенденций в индустрии и применять их в моих проектах. Я ищу возможности для дальнейшего развития и сотрудничества, где мой опыт и навыки могут принести ощутимую пользу.",
+        "en": "Hello, I'm Andrey — an experienced developer.\nRecently, I specialize in creating efficient and reliable web applications in Golang. From a young age, I've been fascinated by technology and programming, followed by 18 years of industrial solution development for automating business processes. With my experience in development and the use of modern technologies, I aim to create solutions that enhance user experience and improve business process efficiency. My passion for programming and commitment to continuous learning allow me to stay up-to-date with the latest industry trends and apply them in my projects. I am looking for opportunities for further development and collaboration, where my experience and skills can make a significant contribution."
       },
       "iclass": "",
       "items": []
@@ -20,7 +20,7 @@
     "id": 2,
     "nclass": "skills",
     "title": {
-      "ru": "Опыт",
+      "ru": "Навыки",
       "en": "Skills"
     },
     "content": {
@@ -38,7 +38,7 @@
             "en": "Golang"
           },
           "hrefs": ["https://go.dev/"],
-          "rating": 1
+          "rating": 3
         },
         {
           "id": 2,
@@ -48,7 +48,7 @@
             "en": "PostgreSQL"
           },
           "hrefs": ["https://www.postgresql.org/"],
-          "rating": 2
+          "rating": 3
         },
         {
           "id": 3,
@@ -68,7 +68,7 @@
             "en": "Git"
           },
           "hrefs": ["https://github.com/"],
-          "rating": 4
+          "rating": 3
         }
       ],
       "isActive": true
@@ -95,7 +95,7 @@
             "en": "Password Manager \"GophKeeper\""
           },
           "descr": {
-            "ru": "\"GophKeeper\" - это система управления паролями, разработанная на Go, которая обеспечивает безопасное и удобное хранение личной информации. Проект включает в себя клиент-серверную архитектуру, позволяющую пользователям регистрироваться, аутентифицироваться и авторизовывать доступ к своим данным. GophKeeper поддерживает синхронизацию данных между клиентами и обеспечивает безопасность передачи и хранения информации. Клиент GophKeeper представляет собой CLI-приложение, доступное для Windows, Linux и Mac OS, что обеспечивает удобство использования на различных платформах. Проект включает в себя функции для создания, редактирования и удаления данных, а также для выбора хранилища и формата хранения данных. GophKeeper также предлагает гибкость в выборе механизмов аутентификации и авторизации, обеспечивая высокий уровень безопасности. Проект покрыт юнит-тестами, подтверждающими его надежность и стабильность. Этот проект демонстрирует мои навыки в разработке на Go, а также мою способность создавать сложные и функциональные системы, которые решают реальные задачи пользователей.",
+            "ru": "\"GophKeeper\" - это система управления паролями, разработанная на Go, которая обеспечивает безопасное и удобное хранение личной информации. Проект включает в себя клиент-серверную архитектуру, позволяющую пользователям регистрироваться, аутентифицироваться и авторизовывать доступ к своим данным. GophKeeper поддерживает синхронизацию данных между клиентами и обеспечивает безопасность передачи и хранения информации. Клиент GophKeeper представляет собой CLI-приложение, доступное для Windows, Linux и Mac OS, что обеспечивает удобство использования на различных платформах. Проект включает в себя функции для создания, редактирования и удаления данных. GophKeeper также предлагает гибкость в выборе механизмов аутентификации и авторизации, обеспечивая высокий уровень безопасности. Проект покрыт юнит-тестами, подтверждающими его надежность и стабильность. Этот проект демонстрирует мои навыки в разработке на Go, а также мою способность создавать сложные и функциональные системы, которые решают реальные задачи пользователей.",
             "en": "\"GophKeeper\" is a password management system developed in Go, ensuring secure and convenient storage of personal information. The project includes a client-server architecture, allowing users to register, authenticate, and authorize access to their data. GophKeeper supports data synchronization between clients and ensures the security of data transmission and storage. The GophKeeper client is a CLI application available for Windows, Linux, and Mac OS, ensuring ease of use across different platforms. The project includes functions for creating, editing, and deleting data, as well as for choosing storage and data storage formats. GophKeeper also offers flexibility in choosing authentication and authorization mechanisms, ensuring a high level of security. The project is covered by unit tests, confirming its reliability and stability. This project demonstrates my skills in Go development, as well as my ability to create complex and functional systems that solve real user problems."
           },
           "hrefs": [
@@ -110,8 +110,8 @@
             "en": "Loyalty Accumulation System \"GopherMart\""
           },
           "descr": {
-            "ru": "\"GopherMart\" - это накопительная система лояльности, разработанная на Golang, предназначенная для улучшения взаимодействия с клиентами интернет-магазина \"Гофермарт\". Система обеспечивает регистрацию и аутентификацию пользователей, приём и обработку номеров заказов, а также управление накопительным счётом лояльности. С помощью уникальной интеграции с внешней системой расчёта баллов лояльности, \"Гофермарт Лояльность\" позволяет пользователям накапливать и использовать баллы для оплаты покупок, создавая эффективную и удобную систему лояльности.",
-            "en": "\"GopherMart\" is a loyalty accumulation system developed in Golang, designed to improve the interaction with the customers of the online store \"GopherMart\". The system ensures user registration and authentication, order number acceptance and processing, as well as loyalty account management. With the help of a unique integration with an external loyalty points calculation system, \"GopherMart Loyalty\" allows users to accumulate and use points for payment, creating an effective and convenient loyalty system."
+            "ru": "\"GopherMart\" - это накопительная система лояльности, разработанная на Golang, предназначенная для улучшения взаимодействия с клиентами интернет-магазина \"Гофермарт\". Система обеспечивает регистрацию и аутентификацию пользователей, приём и обработку номеров заказов, а также управление накопительным счётом лояльности. С помощью интеграции с внешней системой расчёта баллов лояльности, \"Гофермарт\" позволяет пользователям накапливать и использовать баллы для оплаты покупок, создавая эффективную и удобную систему лояльности.",
+            "en": "\"GopherMart\" is a loyalty accumulation system developed in Golang, designed to improve the interaction with the customers of the online store \"GopherMart\". The system ensures user registration and authentication, order number acceptance and processing, as well as loyalty account management. With the help of a integration with an external loyalty points calculation system, \"GopherMart\" allows users to accumulate and use points for payment, creating an effective and convenient loyalty system."
           },
           "hrefs": ["https://github.com/wurt83ow/gophermart"]
         },
@@ -134,8 +134,8 @@
             "en": "Website \"Portfolio\""
           },
           "descr": {
-            "ru": "\"Portfolio\" - это веб-проект, сочетающий в себе клиентскую часть, разработанную на React, и бэкенд, реализованный на Golang. Проект использует MongoDB в качестве базы данных для хранения и обработки данных, а веб-сервер Nginx обеспечивает высокую производительность и надежность. Для развертывания и управления проектом используется Docker, позволяя запускать приложение в трех контейнерах: portfolio_server_nginx для обработки входящих HTTP-запросов, mongo для работы с базой данных, и portfolio_server_backend для обработки бизнес-логики на стороне сервера. Развертывание проекта осуществляется на виртуальной машине в Яндекс.Облаке, что обеспечивает масштабируемость и надежность инфраструктуры.",
-            "en": "\"Portfolio\" is a web project that combines a client-side part developed in React and a backend implemented in Golang. The project uses MongoDB as a database for storing and processing data, and the Nginx web server ensures high performance and reliability. Docker is used for deployment and project management, allowing the application to run in three containers: portfolio_server_nginx for handling incoming HTTP requests, mongo for database operations, and portfolio_server_backend for server-side business logic processing. The project is deployed on a virtual machine in Yandex.Cloud, ensuring scalability and reliability of the infrastructure."
+            "ru": "\"Portfolio\" - это веб-проект, сочетающий в себе клиентскую часть, разработанную на React, и бэкенд, реализованный на Golang. Проект использует MongoDB в качестве базы данных для хранения и обработки данных, а веб-сервер Nginx при необходимости мог бы обеспечить высокую производительность и надежность. Для развертывания и управления проектом используется Docker, позволяя запускать приложение в трех контейнерах: nginx для обработки входящих HTTP-запросов, mongo для работы с базой данных, и backend для обработки бизнес-логики на стороне сервера. Развертывание проекта осуществляется на виртуальной машине в Yandex.Cloud, что обеспечивает масштабируемость и надежность инфраструктуры.",
+            "en": "\"Portfolio\" is a web project that combines a client-side part developed in React and a backend implemented in Golang. The project uses MongoDB as a database for storing and processing data, and the Nginx web server could ensure high performance and reliability when necessary. Docker is used for deployment and project management, allowing the application to run in three containers: nginx for handling incoming HTTP requests, mongo for database operations, and backend for server-side business logic processing. The project is deployed on a virtual machine in Yandex.Cloud, ensuring scalability and reliability of the infrastructure."
           },
           "hrefs": [
             "https://github.com/wurt83ow/portfolio_server",
@@ -154,7 +154,7 @@
     },
     "content": {
       "textBefore": {
-        "ru": "Хотите узнать больше или просто поговорить?\nВы всегда пожалуйста!",
+        "ru": "Хотите узнать больше или просто поговорить?\nДобро пожаловать!",
         "en": "Want to know more or just chat?\nYou are welcome!"
       },
       "btnText": {
